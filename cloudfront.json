@@ -9,14 +9,14 @@
             "Quantity": 1,
             "Items": [
                 {
-                    "Id": "mywebserver-s3-cf",
-                    "DomainName": "mywebserver-bucket-raghav.s3.ap-south-1.amazonaws.com",
+                    "Id": "ID(ANY STRING)",
+                    "DomainName": "BUCKET_NAME.s3.REGION.amazonaws.com",
                     "OriginPath": "",
                     "CustomHeaders": {
                         "Quantity": 0
                     },
                     "S3OriginConfig": {
-                        "OriginAccessIdentity": "origin-access-identity/cloudfront/EJKFZO4DGRFS2"
+                        "OriginAccessIdentity": "origin-access-identity/cloudfront/OAI_ID"
                     }
                 }
             ]
@@ -25,7 +25,7 @@
             "Quantity": 0
         },
         "DefaultCacheBehavior": {
-            "TargetOriginId": "mywebserver-s3-cf",
+            "TargetOriginId": "ID(SAME AS ABOVE)",
             "ForwardedValues": {
                 "QueryString": false,
                 "Cookies": {
@@ -81,7 +81,7 @@
             "Prefix": ""
         },
         "PriceClass": "PriceClass_All",
-        "Enabled": false,
+        "Enabled": true(when creatinge lse false: to disable before deleting) ,
         "ViewerCertificate": {
             "CloudFrontDefaultCertificate": true,
             "MinimumProtocolVersion": "TLSv1",
