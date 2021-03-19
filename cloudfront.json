@@ -81,7 +81,7 @@
             "Prefix": ""
         },
         "PriceClass": "PriceClass_All",
-        "Enabled": true,
+        "Enabled": false,
         "ViewerCertificate": {
             "CloudFrontDefaultCertificate": true,
             "MinimumProtocolVersion": "TLSv1",
